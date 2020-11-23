@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Route, HashRouter} from 'react-router-dom'
+
+import './App.css'
+
+import Header from './components/Header'
+import Footer from './components/Footer'
+
+import Home from './pages/Home'
+import Berita from './pages/Berita'
+import JadwalSholat from './pages/JadwalSholat'
+import Profil from './pages/Profil'
+import Cuaca from './pages/Cuaca'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return(
+    <div>
+      <Header/>
+        <HashRouter>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/profil" component={Profil} />
+          <Route exact path="/berita" component={Berita} />
+          <Route exact path="/jadwal-sholat" component={JadwalSholat} />
+          <Route exact path="/cuaca" component={Cuaca} />
+        </HashRouter>
+      <Footer/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

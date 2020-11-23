@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Roboto', sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.card {
+  transition: all .2s ease-in-out;
+}
+.nav {
+  background: #FFFFFF!important;
+}
+.bg-primary-btnvrs {
+  background-color: rgb(37, 51, 64);
+}
+.font-primary, .font-primary-brand {
+  font-size: 32px;
+  font-weight: 100;
+  color: #fff;
+}
+.font-primary-bold {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+.font-secondary-light {
+  font-size: 6px;
+  font-weight: 300;
+  color: #fff;
+}
+.font-medium-bold {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff!important;
+}
+.font-medium-bold > a:hover {
+  cursor: pointer;
+}
+.font-paragraph {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+}
+.brand:hover {
+  color: none;
+}
+.logo {
+  width: 50px;
+}
+.bg {
+  height: 500px;
+  background-image: url(images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sticky-top {
+  top: 20px!important;
+}
+.color-primary-btnvrs {
+  color: black;
+}
+.text-hp-wrapper {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.text-hp-wrapper:before {
+  content: "";
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(37, 51, 64);
+  opacity: 0.25;
+  position: absolute;
+  z-index: -1;
+}
+.tab {
+  overflow: hidden;
+  overflow-x: auto;
+}
+.tab::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.tab::-webkit-scrollbar-thumb {
+  background:white;
+  border-radius: 10px;
+}
+.tab::-webkit-scrollbar {
+  height: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(119, 119, 119);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(37, 51, 64);
+}
+
+@media (max-width: 412px) {
+  .logo {
+      width: 30px;
+  }
+  .font-primary-brand, .font-primary-bold {
+      font-size: 24px;
+  }
+  .font-secondary-light {
+      font-size: 4.5px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 782px){
+  #map {
+      width: 95%;
   }
-  to {
-    transform: rotate(360deg);
+  .progress-wrap {
+      width: 100%!important;
   }
 }
