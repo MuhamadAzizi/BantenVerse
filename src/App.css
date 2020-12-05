@@ -93,7 +93,19 @@ a:hover {
 .tab::-webkit-scrollbar {
   height: 5px;
 }
-
+.active {
+  background-color: rgb(37, 51, 64)!important;
+  color: #f7f7f7!important;
+}
+.active:hover {
+  color: white!important;
+}
+.dropdown-item:focus {
+  background-color: rgb(37, 51, 64)!important;
+}
+.dropdown-item {
+  font-weight: 300;
+}
 ::-webkit-scrollbar {
   width: 10px;
 }
