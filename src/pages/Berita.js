@@ -13,6 +13,11 @@ class Berita extends React.Component {
   state = {
     berita: []
   }
+  
+  loadingContainerStyle = {
+    backgroundColor: 'rgb(37, 51, 64)',
+    marginBottom: '48px'
+  }
 
   componentDidMount() {
     trackPromise(
@@ -30,7 +35,11 @@ class Berita extends React.Component {
         <h1 className="font-primary text-center m-5" style={{color: 'black'}}>Berita Seputar Banten</h1>
         <div className="container">
           <div className="row d-flex justify-content-center">
-            <Loader/>
+            <Loader
+              styles={this.loadingContainerStyle}
+              height={256}
+              width={256}
+            />
             { this.state.berita.map((value, i) => (
               <Card
                 key={i}

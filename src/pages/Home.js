@@ -1,18 +1,29 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
+import { trackPromise } from 'react-promise-tracker'
+import FadeIn from 'react-fade-in'
 import axios from 'axios'
 
 import Map from '../components/Map'
+import Loader from '../components/Loader'
 
 function Home() {
     const [ image, setImage ] = useState([])
+    const loadingContainerStyle = {
+        backgroundColor: 'rgb(37, 51, 64)',
+        margin: '16px',
+        display: 'flex',
+        justifyContent: 'center'
+    }
 
     useEffect(() => {
-        axios.get('https://bantenverse-api.herokuapp.com/api/v1/covid19')
-        .then(res => {
-            const data = res.data
-            setImage(data)
-        })
+        trackPromise(
+            axios.get('https://bantenverse-api.herokuapp.com/api/v1/covid19')
+            .then(res => {
+                const data = res.data
+                setImage(data)
+            })
+        )
     }, [])
 
     return(
@@ -37,7 +48,14 @@ function Home() {
 
             <div className="text-center m-4">
                 <div className="border border-dark col-12 col-lg-4 mx-auto mt-4 mb-4 p-0">
-                    <h1 className="font-primary bg-primary-btnvrs m-0 py-2 text-light">Peta Sebaran COVID-19</h1>
+                    <h1 className="font-primary bg-primary-btnvrs m-0 py-2 text-light">Peta Sebaran COVID19</h1>
+                    <FadeIn>   
+                        <Loader
+                            styles={loadingContainerStyle}
+                            height={256}
+                            width={256}
+                        />
+                    </FadeIn>
                     <img src={image.source} alt={image.description} className="mt-3 mb-3 col-12"/>
                     <p><a className="btn btn-outline-dark" href={image.more} target="_blank" rel="noopener noreferrer">Lebih lanjut</a></p>
                 </div>

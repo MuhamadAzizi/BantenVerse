@@ -2,20 +2,16 @@ import React from 'react'
 import ReactLoading from 'react-loading'
 import { usePromiseTracker } from 'react-promise-tracker'
 
-function Loader() {
+function Loader(props) {
     const { promiseInProgress } = usePromiseTracker()
-    const loadingContainerStyle = {
-        backgroundColor: 'rgb(37, 51, 64)',
-        marginBottom: '48px'
-    }
 
     return(
         promiseInProgress &&
-        <div className="rounded p-4" style={loadingContainerStyle}>
+        <div className="rounded p-4" style={props.styles}>
             <ReactLoading
                 type={'bars'}
-                height={256}
-                width={256}/>
+                height={props.height}
+                width={props.width}/>
         </div>
     )
 }
