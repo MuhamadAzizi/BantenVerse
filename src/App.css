@@ -100,11 +100,15 @@ a:hover {
 .active:hover {
   color: white!important;
 }
-.dropdown-item:focus {
+.dropdown-item:hover {
   background-color: rgb(37, 51, 64)!important;
+  color: white!important;
 }
 .dropdown-item {
   font-weight: 300;
+}
+.btn-outline-dark:hover {
+  background-color: rgb(37, 51, 64)!important;
 }
 ::-webkit-scrollbar {
   width: 10px;

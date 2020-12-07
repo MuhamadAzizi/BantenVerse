@@ -18,7 +18,6 @@ class JadwalSholat extends React.Component {
         axios.get(`https://api.banghasan.com/sholat/format/json/jadwal/kota/676/tanggal/${now}`)
         .then(res => {
             const data = res.data.jadwal.data
-            console.log(data)
             this.setState({ jadwal: data })
         })
     }
