@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import logo from '../images/logo.png'
 
 function Header() {
@@ -6,10 +7,10 @@ function Header() {
         <div className="bg-primary-btnvrs p-2">
             <div className="container d-flex align-items-center justify-content-between">
                 <div className="d-flex align-items-center">
-                    <a href="/" className="d-flex align-items-center">
+                    <NavLink to="/" lassName="d-flex align-items-center">
                         <img className="logo" src={logo} alt="logo"/>
                         <span className="font-primary-brand ml-2">BantenVerse</span>
-                    </a>
+                    </NavLink>
                 </div>
                 <div className="d-flex flex-row align-items-center">
                     <span className="font-primary-bold">3M</span>

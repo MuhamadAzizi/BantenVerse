@@ -15,8 +15,8 @@ import Cuaca from './pages/Cuaca'
 function App() {
   return(
     <div>
-      <Header/>
-        <HashRouter>
+      <HashRouter>
+        <Header/>
           <Route exact path="/" component={Home} />
           <Route exact path="/profil" component={Profil} />
           <Route exact path="/berita" component={Berita} />

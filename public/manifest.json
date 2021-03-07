@@ -1,6 +1,7 @@
 {
   "short_name": "BantenVerse",
-  "name": "Lebih dekat dengan Banten secara digital melalui BantenVerse",
+  "name": "BantenVerse",
+  "description": "Lebih dekat dengan Banten melalui BantenVerse",
   "start_url": "/index.html",
   "display": "standalone",
   "orientation": "any",
