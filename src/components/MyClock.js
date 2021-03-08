@@ -17,7 +17,7 @@ function MyClock() {
  
   return (
     <div className="d-flex justify-content-center mb-5">
-      <span className="font-weight-bold" style={{fontSize: '64px', color: 'rgb(37, 51, 64)'}}>{value}</span>
+      <span className="fs-1 text-dark fw-bold">{value}</span>
     </div>
   )
 }

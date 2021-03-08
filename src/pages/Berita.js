@@ -32,7 +32,7 @@ class Berita extends React.Component {
   render() {
     return(
       <div>
-        <h1 className="font-primary text-center m-5" style={{color: 'black'}}>Berita Seputar Banten</h1>
+        <h1 className="text-center my-4">Berita Seputar Banten</h1>
         <div className="container">
           <div className="row d-flex justify-content-center">
             <Loader

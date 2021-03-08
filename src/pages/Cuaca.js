@@ -64,7 +64,7 @@ class Cuaca extends React.Component {
 
         return(
             <div>
-                <h1 className="text-center font-primary text-dark m-5">Keadaan Cuaca</h1>
+                <h1 className="text-dark text-center my-4">Keadaan Cuaca</h1>
                     <div className="container mx-auto">
                         {data.map(value => (
                             <FadeIn>

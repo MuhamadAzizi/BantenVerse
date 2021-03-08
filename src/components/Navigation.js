@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom'
 function Navigation() {
     return(
         <div className="col-lg-3 col-md-12 d-flex justify-content-center my-3">
-            <div className="col-12 col-lg-12 bg-dark rounded text-light p-2" style={{width: '100%'}}>
-                <h1 className="font-primary my-3 text-center">Navigation</h1>
+            <div className="col-12 col-lg-12 bg-dark rounded text-light p-2">
+                <h2 className="my-3 text-center">Navigation</h2>
                 <div>
                     <NavLink to="/berita" className="nav btn btn-light mb-2 card font-paragraph text-dark">Berita</NavLink>
                     <NavLink to="/cuaca" className="nav btn btn-light mb-2 card font-paragraph text-dark">Cuaca</NavLink>

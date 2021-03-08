@@ -25,9 +25,11 @@ class JadwalSholat extends React.Component {
     render() {
         return(
             <div>
-                <div className="container">
-                    <h1 className="font-primary text-center mt-5" style={{color: 'black'}}>Jadwal Sholat Serang dan Sekitarnya</h1>
-                    <h1 className="font-primary text-center mb-5" style={{color: 'black'}}>{this.state.jadwal.tanggal}</h1>
+                <div className="container my-4">
+                    <div className="mb-4">
+                        <h1 className="text-center">Jadwal Sholat Serang dan Sekitarnya</h1>
+                        <h2 className="text-center">{this.state.jadwal.tanggal}</h2>
+                    </div>
                     <MyClock/>
                 </div>
                 <div className="container">
@@ -35,57 +37,57 @@ class JadwalSholat extends React.Component {
                         <div className="row d-flex justify-content-center">
                             <div className="col-12 col-md-4 mb-4">
                                 <div className="card bg-dark col-12">
-                                    <div className="card-body text-light p-0 py-2">
-                                        <h1 className="text-center font-paragraph">Imsak</h1>
-                                        <h5 className="card-title text-center font-paragraph mb-0">{this.state.jadwal.imsak}</h5>
+                                    <div className="card-body text-light text-center p-0 py-2">
+                                        <span>Imsak</span><br/>
+                                        <span className="card-title mb-0">{this.state.jadwal.imsak}</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-md-4 mb-4">
                                 <div className="card bg-dark col-12">
-                                    <div className="card-body text-light p-0 py-2">
-                                        <h1 className="text-center font-paragraph">Subuh</h1>
-                                        <h5 className="card-title text-center font-paragraph mb-0">{this.state.jadwal.subuh}</h5>
+                                    <div className="card-body text-light text-center p-0 py-2">
+                                        <span>Subuh</span><br/>
+                                        <span className="card-title mb-0">{this.state.jadwal.subuh}</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-md-4 mb-4">
                                 <div className="card bg-dark col-12">
-                                    <div className="card-body text-light p-0 py-2">
-                                        <h1 className="text-center font-paragraph">Terbit</h1>
-                                        <h5 className="card-title text-center font-paragraph mb-0">{this.state.jadwal.terbit}</h5>
+                                    <div className="card-body text-light text-center p-0 py-2">
+                                        <span>Terbit</span><br/>
+                                        <span className="card-title mb-0">{this.state.jadwal.terbit}</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-md-4 mb-4">
                                 <div className="card bg-dark col-12">
-                                    <div className="card-body text-light p-0 py-2">
-                                        <h1 className="text-center font-paragraph">Dzuhur</h1>
-                                        <h5 className="card-title text-center font-paragraph mb-0">{this.state.jadwal.dzuhur}</h5>
+                                    <div className="card-body text-light text-center p-0 py-2">
+                                        <span>Dzuhur</span><br/>
+                                        <span className="card-title mb-0">{this.state.jadwal.dzuhur}</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-md-4 mb-4">
                                 <div className="card bg-dark col-12">
-                                    <div className="card-body text-light p-0 py-2">
-                                        <h1 className="text-center font-paragraph">Ashar</h1>
-                                        <h5 className="card-title text-center font-paragraph mb-0">{this.state.jadwal.ashar}</h5>
+                                    <div className="card-body text-light text-center p-0 py-2">
+                                        <span>Ashar</span><br/>
+                                        <span className="card-title mb-0">{this.state.jadwal.ashar}</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-md-4 mb-4">
                                 <div className="card bg-dark col-12">
-                                    <div className="card-body text-light p-0 py-2">
-                                        <h1 className="text-center font-paragraph">Maghrib</h1>
-                                        <h5 className="card-title text-center font-paragraph mb-0">{this.state.jadwal.maghrib}</h5>
+                                    <div className="card-body text-light text-center p-0 py-2">
+                                        <span>Maghrib</span><br/>
+                                        <span className="card-title mb-0">{this.state.jadwal.maghrib}</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-md-4 mb-4">
                                 <div className="card bg-dark col-12">
-                                    <div className="card-body text-light p-0 py-2">
-                                        <h1 className="text-center font-paragraph">Isya</h1>
-                                        <h5 className="card-title text-center font-paragraph mb-0">{this.state.jadwal.isya}</h5>
+                                    <div className="card-body text-light text-center p-0 py-2">
+                                        <span>Isya</span><br/>
+                                        <span className="card-title mb-0">{this.state.jadwal.isya}</span>
                                     </div>
                                 </div>
                             </div>

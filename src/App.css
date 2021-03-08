@@ -10,36 +10,8 @@ a:hover {
 .card {
   transition: all .2s ease-in-out;
 }
-.nav {
-  background: #FFFFFF!important;
-}
-.font-primary, .font-primary-brand {
-  font-size: 32px;
-  font-weight: 100;
-  color: #fff;
-}
-.font-primary-bold {
-  font-size: 32px;
-  font-weight: 700;
-  color: #fff;
-}
-.font-secondary-light {
-  font-size: 6px;
-  font-weight: 300;
-  color: #fff;
-}
-.font-medium-bold {
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff!important;
-}
-.font-medium-bold > a:hover {
-  cursor: pointer;
-}
-.font-paragraph {
-  font-size: 14px;
-  color: #fff;
-  font-weight: 300;
+h1, h2, h3, h4, h5, p, span {
+  font-weight: 100 !important;
 }
 .brand:hover {
   color: none;
