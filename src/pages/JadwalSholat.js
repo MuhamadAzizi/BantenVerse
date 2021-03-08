@@ -34,7 +34,7 @@ class JadwalSholat extends React.Component {
                     <FadeIn>
                         <div className="row d-flex justify-content-center">
                             <div className="col-12 col-md-4 mb-4">
-                                <div className="card bg-primary-btnvrs col-12">
+                                <div className="card bg-dark col-12">
                                     <div className="card-body text-light p-0 py-2">
                                         <h1 className="text-center font-paragraph">Imsak</h1>
                                         <h5 className="card-title text-center font-paragraph mb-0">{this.state.jadwal.imsak}</h5>
@@ -42,7 +42,7 @@ class JadwalSholat extends React.Component {
                                 </div>
                             </div>
                             <div className="col-12 col-md-4 mb-4">
-                                <div className="card bg-primary-btnvrs col-12">
+                                <div className="card bg-dark col-12">
                                     <div className="card-body text-light p-0 py-2">
                                         <h1 className="text-center font-paragraph">Subuh</h1>
                                         <h5 className="card-title text-center font-paragraph mb-0">{this.state.jadwal.subuh}</h5>
@@ -50,7 +50,7 @@ class JadwalSholat extends React.Component {
                                 </div>
                             </div>
                             <div className="col-12 col-md-4 mb-4">
-                                <div className="card bg-primary-btnvrs col-12">
+                                <div className="card bg-dark col-12">
                                     <div className="card-body text-light p-0 py-2">
                                         <h1 className="text-center font-paragraph">Terbit</h1>
                                         <h5 className="card-title text-center font-paragraph mb-0">{this.state.jadwal.terbit}</h5>
@@ -58,7 +58,7 @@ class JadwalSholat extends React.Component {
                                 </div>
                             </div>
                             <div className="col-12 col-md-4 mb-4">
-                                <div className="card bg-primary-btnvrs col-12">
+                                <div className="card bg-dark col-12">
                                     <div className="card-body text-light p-0 py-2">
                                         <h1 className="text-center font-paragraph">Dzuhur</h1>
                                         <h5 className="card-title text-center font-paragraph mb-0">{this.state.jadwal.dzuhur}</h5>
@@ -66,7 +66,7 @@ class JadwalSholat extends React.Component {
                                 </div>
                             </div>
                             <div className="col-12 col-md-4 mb-4">
-                                <div className="card bg-primary-btnvrs col-12">
+                                <div className="card bg-dark col-12">
                                     <div className="card-body text-light p-0 py-2">
                                         <h1 className="text-center font-paragraph">Ashar</h1>
                                         <h5 className="card-title text-center font-paragraph mb-0">{this.state.jadwal.ashar}</h5>
@@ -74,7 +74,7 @@ class JadwalSholat extends React.Component {
                                 </div>
                             </div>
                             <div className="col-12 col-md-4 mb-4">
-                                <div className="card bg-primary-btnvrs col-12">
+                                <div className="card bg-dark col-12">
                                     <div className="card-body text-light p-0 py-2">
                                         <h1 className="text-center font-paragraph">Maghrib</h1>
                                         <h5 className="card-title text-center font-paragraph mb-0">{this.state.jadwal.maghrib}</h5>
@@ -82,7 +82,7 @@ class JadwalSholat extends React.Component {
                                 </div>
                             </div>
                             <div className="col-12 col-md-4 mb-4">
-                                <div className="card bg-primary-btnvrs col-12">
+                                <div className="card bg-dark col-12">
                                     <div className="card-body text-light p-0 py-2">
                                         <h1 className="text-center font-paragraph">Isya</h1>
                                         <h5 className="card-title text-center font-paragraph mb-0">{this.state.jadwal.isya}</h5>

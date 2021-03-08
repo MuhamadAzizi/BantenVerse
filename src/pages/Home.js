@@ -47,8 +47,8 @@ function Home() {
             </div>
 
             <div className="text-center m-4">
-                <div className="border border-dark col-12 col-lg-4 mx-auto mt-4 mb-4 p-0">
-                    <h1 className="font-primary bg-primary-btnvrs m-0 py-2 text-light">Peta Sebaran COVID19</h1>
+                <div className="border border-dark col-12 col-lg-4 mx-auto my-4 p-1">
+                    <h1 className="font-primary bg-dark m-0 py-2 text-light">Peta Sebaran COVID19</h1>
                     <FadeIn>   
                         <Loader
                             styles={loadingContainerStyle}
@@ -56,11 +56,11 @@ function Home() {
                             width={256}
                         />
                     </FadeIn>
-                    <img src={image.source} alt={image.description} className="mt-3 mb-3 col-12"/>
-                    <p><a className="btn btn-outline-dark" href={image.more} target="_blank" rel="noopener noreferrer">Lebih lanjut</a></p>
+                    <img src={image.source} alt={image.description} className="mt-1 mb-3 col-12"/>
+                    <p><a className="btn btn-dark" href={image.more} target="_blank" rel="noopener noreferrer">Lebih lanjut</a></p>
                 </div>
 
-                <h1 className="font-primary" style={{color: 'black'}}>Peta Ibu Kota Banten dan Sekitarnya</h1>
+                <h1 className="text-dark font-primary">Peta Ibu Kota Banten dan Sekitarnya</h1>
                 <Map
                     className={'mx-auto mt-4 mb-4 rounded col-12 col-lg-6'}
                     lng={106.150276}

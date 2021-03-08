@@ -4,8 +4,8 @@ import Map from './Map'
 
 function Sidebar() {
     return(
-        <div className="col-lg-3 col-md-12 d-flex justify-content-center my-4">
-            <div className="col-12 col-lg-11 bg-primary-btnvrs rounded text-light py-2">
+        <div className="col-lg-3 col-md-12 d-flex justify-content-center my-3">
+            <div className="col-12 col-lg-12 bg-dark rounded text-light p-2">
                 <h1 className="text-center font-primary my-3">Peta</h1>
                 <Map
                     className={'mx-auto mb-3 rounded'}

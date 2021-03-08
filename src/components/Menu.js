@@ -7,11 +7,10 @@ function Menu() {
     return(
             <div className="menu" style={{position: 'fixed', bottom: '10px', right: '10px'}}>
                 <div className="btn-group dropup">
-                    <button style={{width: '52px', height: '52px'}} type="button" className="btn btn-light border border-dark rounded-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button style={{width: '52px', height: '52px'}} type="button" className="btn btn-light border border-dark rounded-circle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <FontAwesomeIcon icon={faBars} size="lg" />
                     </button>
                     <div className="dropdown-menu border border-dark">
-                        {/* <NavLink to="/" className="dropdown-item text-dark ">Home</NavLink> */}
                         <NavLink to="/profil" className="dropdown-item">Profil</NavLink>
                         <NavLink to="/berita" className="dropdown-item">Berita</NavLink>
                         <NavLink to="/cuaca" className="dropdown-item">Cuaca</NavLink>

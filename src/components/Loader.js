@@ -7,7 +7,7 @@ function Loader(props) {
 
     return(
         promiseInProgress &&
-        <div className="rounded p-4" style={props.styles}>
+        <div className="rounded p-4 d-flex justify-content-center" style={props.styles}>
             <ReactLoading
                 type={'bars'}
                 height={props.height}
